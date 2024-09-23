@@ -1,0 +1,46 @@
+---
+title: "global_vars_test"
+output: html_document
+date: "2024-09-23"
+---
+
+```{r setup, include=FALSE}
+x = 2
+
+```
+
+
+```{r func}
+
+myfunc <- function(){
+  print(x)
+}
+
+myfunc()
+```
+
+```{r}
+source('myfunc2.R')
+
+myfunc2()
+```
+
+### Python example
+
+```{python}
+
+x = 2
+
+def myfunc():
+  print(x)
+
+myfunc()
+
+from myfuncs import myfunc2
+
+myfunc2()
+
+```
+
+
+
